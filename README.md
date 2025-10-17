@@ -59,7 +59,7 @@ module bcd_to_7segment(
 
 always @(*) 
 begin
-    an <= 4'b1110;
+    an <= 4'b0111;
     case (bcd)
         4'b0000: seg = 7'b1000000;
         4'b0001: seg = 7'b1111001;
@@ -76,7 +76,6 @@ begin
 end
 
 endmodule
-
 ```
 ## Constraint file for Seven-Segment Display
 ```
